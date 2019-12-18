@@ -86,17 +86,20 @@ body {
 }
 
 html, body {
-  height: 100%;
+  height: auto;
+  min-height: 100% !important;
 }
 
 @media screen and (max-width: 900px) {
   hstack.responsive {
     flex-direction: column;
+    align-items: flex-start !important;
   }
-}
 
-video {
-  width:100%;
-  max-width:500px;
-  height:auto;
+  hstack.responsive[spacing]>:last-child {
+    margin-bottom: 0 !important;
+  }
+  hstack.responsive[spacing=l]>* {
+    margin-bottom: 28px !important;
+  }
 }

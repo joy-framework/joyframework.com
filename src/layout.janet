@@ -14,7 +14,7 @@
          [:link {:href "/app.css" :rel "stylesheet"}]
          [:title "Joy Framework"]]
         [:body {:class "bg-purple-gradient"}
-          [:div {:class "mw8 center pa4-ns pa3"}
+          [:vstack {:class "mw8 center pa4-ns pa3"}
            [:hstack {:spacing "l"}
             [:div {:class "white"} "😇Joy"]
             [:spacer]

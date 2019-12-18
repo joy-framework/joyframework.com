@@ -77,20 +77,19 @@
 
 (defn index [request]
   [:div {:class "pt4 pt5-ns"}
-   [:vstack
+   [:vstack {:spacing "l"}
     [:hstack {:spacing "l" :class "responsive"}
      [:vstack {:spacing "l"}
-       [:div {:class "mw6 white"}
-        [:h1 {:class "white lh-title f1"}
-         "Make web apps fast with very little code"]
-        [:div {:class "white lh-copy f4"}
-         [:span "Joy is a web framework written in "]
-         [:a {:href "https://janet-lang.org" :class "white underline"} "janet"]
-         [:span " for people who like clojure syntax, fast startup time and low memory usage."]]]]
+      [:div {:class "mw6 white"}
+       [:h1 {:class "white lh-title f1-ns f2"}
+        "Make web apps fast with Joy"]
+       [:div {:class "white lh-copy f4"}
+        [:span "Joy is a web framework written in "]
+        [:a {:href "https://janet-lang.org" :class "white underline"} "janet"]
+        [:span " for people who like clojure syntax, fast startup time and very low memory usage."]]]]
 
-     [:spacer]
+     [:div {:class "br3 pa4 bg-purple"}
+      (code)]]
 
-     (code)]
-
-    [:div {:class "pt6-l"}
+    [:div {:class ""}
      (features)]]])
