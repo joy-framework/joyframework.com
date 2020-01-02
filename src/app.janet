@@ -2,10 +2,9 @@
 (import ./layout :as layout)
 (import ./routes :as routes)
 
-(def app (-> (app routes/app)
+(def app (-> (handler routes/app)
              (db (env :db-name))
              (layout layout/app)
-             (session)
              (body-parser)
              (extra-methods)
              (query-string)
