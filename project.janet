@@ -1,8 +1,8 @@
 (declare-project
   :name "joy-framework.com"
   :description ""
-  :dependencies [{:repo "https://github.com/joy-framework/joy" :tag "27d24ed98935277b9c26d972cb0c16f4f76cdbba"}
-                 {:repo "https://github.com/joy-framework/tester" :tag "c14aff3591cb0aed74cba9b54d853cf0bf539ecb"}]
+  :dependencies [{:repo "https://github.com/joy-framework/joy" :tag "0.5.2"}
+                 {:repo "https://github.com/joy-framework/tester" :tag "0.1.0"}]
   :author "@swlkr"
   :license "MIT"
   :url "https://joy-framework.com"

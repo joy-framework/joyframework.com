@@ -10,4 +10,5 @@
              (query-string)
              (server-error)
              (logger)
-             (static-files)))
+             (static-files)
+             (not-found)))
