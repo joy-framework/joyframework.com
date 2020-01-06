@@ -116,3 +116,15 @@ p > code {
   padding: 0 5px;
   border-radius: 5px;
 }
+
+body {
+  font-size: 18px;
+}
+
+p a {
+  color: var(--orange);
+}
+
+p a:visited {
+  color: var(--light-orange);
+}
