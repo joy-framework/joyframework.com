@@ -2,13 +2,27 @@
 (import ./layout :as layout)
 (import ./routes :as routes)
 
-(def app (-> (handler routes/app)
-             (db (env :db-name))
-             (layout layout/app)
-             (body-parser)
-             (extra-methods)
-             (query-string)
-             (server-error)
-             (logger)
-             (static-files)
-             (not-found)))
+
+(defn web [handler]
+  (-> handler
+      (body-parser)
+      (extra-methods)
+      (query-string)
+      (server-error)
+      (logger)
+      (static-files)))
+
+
+(def home (-> (handler routes/app)
+              (layout layout/app)
+              (web)))
+
+
+(def posts (-> (handler routes/post)
+               (layout layout/post)
+               (web)
+               (not-found)))
+
+
+(def app (app home posts))
+

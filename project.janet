@@ -2,7 +2,8 @@
   :name "joy-framework.com"
   :description ""
   :dependencies [{:repo "https://github.com/joy-framework/joy" :tag "0.5.2"}
-                 {:repo "https://github.com/joy-framework/tester" :tag "0.1.0"}]
+                 {:repo "https://github.com/joy-framework/tester" :tag "0.1.0"}
+                 {:repo "https://github.com/joy-framework/moondown" :tag "0.1.0"}]
   :author "@swlkr"
   :license "MIT"
   :url "https://joy-framework.com"
