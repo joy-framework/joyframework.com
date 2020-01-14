@@ -50,7 +50,7 @@
 
 
 (defn features []
-  [:hstack {:spacing "l" :class "responsive"}
+  [:hstack {:spacing "l" :class "responsive" :align-y "top"}
    [:div {:class "feature-1"}
     (h1 "Starts fast, stays fast")
     [:p {:class "lh-copy black-ns white"} "Joy starts up in milliseconds so you can get started (and restarted) without worrying about restarting the repl and waiting... a while"]]
@@ -69,7 +69,7 @@
      [:vstack {:spacing "l"}
       [:div {:class "mw6 white"}
        [:h1 {:class "white lh-title f1-ns f2"}
-        "Make web apps fast with Joy"]
+        "Joy to the web"]
        [:div {:class "white lh-copy f4"}
         [:span "Joy is a web framework written in "]
         [:a {:href "https://janet-lang.org" :class "white underline"} "janet"]

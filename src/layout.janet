@@ -18,7 +18,6 @@
     [:a {:href (url-for :home/index) :class "white no-underline"}
      "😇Joy"]]
    [:spacer]
-   [:a {:href (url-for :posts/index) :class "white"} "Posts"]
    [:a {:href "https://github.com/joy-framework/joy" :class "white"} "Github"]])
 
 
@@ -34,18 +33,3 @@
            (menu)
            body]
          [:script {:src "/app.js"}]]]))))
-
-
-(defn post [response]
-  (let [{:body body} response]
-    (respond :html
-      (html
-       (doctype :html5)
-       [:html {:lang "en"}
-        (head)
-        [:body {:class "bg-purple"}
-          [:vstack {:class "mw8 center pa4-ns pa3"}
-           (menu)
-           body]
-         [:script {:src "/app.js"}]]]))))
-
