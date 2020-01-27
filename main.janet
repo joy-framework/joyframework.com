@@ -1,4 +1,6 @@
 (import joy)
 (import ./src/app :prefix "")
 
-(joy/server app 8000)
+(def port (scan-number (joy/env :port)))
+
+(joy/server app port)
