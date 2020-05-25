@@ -18,7 +18,8 @@
     [:a {:href (url-for :home/index) :class "white no-underline"}
      "😇Joy"]]
    [:spacer]
-   [:a {:href "https://github.com/joy-framework/joy" :class "white"} "Github"]])
+   [:a {:href "https://github.com/joy-framework/joy" :class "white"} "Github"]
+   [:a {:href "http://joyframework.com/joy/" :class "white" :target "_BLANK"} "Docs"]])
 
 
 (defn app [response]
